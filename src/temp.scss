@@ -1,0 +1,193 @@
+.pricing_table{
+  padding:3vh;
+}
+.pricing_table:hover .heading_subtitle{
+  border-color:#fff!important
+}
+.pricing_table:hover .heading_subtitle p{
+  color:#eb1c50
+}
+.pricing_table .list_icons ul.et_pb_pricing{
+  padding-left:0;
+  margin:0;
+}
+.pricing_table .list_icons strong{
+  font-size:18px
+}
+.pricing_table .list_icons li:before{
+  content:"\52";
+  font-family: ETmodules!important;
+  margin-right:6px;
+  font-weight:bold;
+  color:#ec1c50;
+  position:absolute;
+  left:0;
+}
+.yellow_table.pricing_table .list_icons li:before{
+  color:#f78a26;
+}
+.green_table.pricing_table .list_icons li:before{
+  color:#8dc63f;
+}
+.orange_table.pricing_table .list_icons li:before{
+  color:#f58927;
+}
+.till_table.pricing_table .list_icons li:before{
+  color:#1ea8aa;
+}
+.blue_table.pricing_table .list_icons li:before{
+  color:#2f439b;
+}
+
+.purple_table_.pricing_table .list_icons li:before{
+  color:#32004a;
+}
+.pricing_table .list_icons li{
+  margin-left:20px
+}
+.pricing_table{
+  position:relative;
+  overflow:hidden;
+}
+.pricing_table.red_table:before{
+  background-color:#eb1c50;
+}
+.pricing_table.red_table{
+  border:2px solid #eb1c50
+}
+.pricing_table.green_table:before{
+  background-color:#8dc63f;
+}
+.pricing_table.green_table{
+  border:2px solid #8dc63f
+}
+.pricing_table.yellow_table:before{
+  background-color:#fccf04;
+}
+.pricing_table.yellow_table{
+  border:2px solid #fccf04;
+
+}
+.pricing_table.purple_table:before{
+  background-color:#32004a;
+}
+.pricing_table.purple_table{
+  border:2px solid #32004a;
+
+}
+.pricing_table.till_table:before{
+  background-color:#1ea8aa;
+}
+.pricing_table.till_table{
+  border:2px solid #1ea8aa
+}
+
+.pricing_table.orange_table:before{
+  background-color:#f58927;
+}
+.pricing_table.orange_table{
+  border:2px solid #f58927
+}
+.pricing_table.blue_table:before{
+  background-color:#2f439b;
+}
+.pricing_table.blue_table{
+  border:2px solid #2f439b
+}
+.pricing_table:before{
+  content: "";
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  transition: 0.3s;
+}
+.pricing_table:hover:before{
+  top:0;
+}
+
+
+
+.pricing_table:hover h3,
+.pricing_table:hover p,
+.pricing_table:hover  .list_icons li,
+.pricing_table:hover  .list_icons li:before{
+  color:#fff!important;
+}
+.pricing_table:hover a.pricing_button{
+  background-color:#fff!important;
+  border-color:#fff!important
+}
+
+
+/* Prcing Tables button for booking */
+
+.pricing_table.red_table .button_booking a{
+  background-color:#eb1c50!important;
+  border-radius:15px!important;
+}
+
+.pricing_table.purple_table .button_booking a{
+  background-color:#32004a!important;
+  border-radius:15px!important;
+}
+
+.pricing_table.till_table .button_booking a{
+  background-color:#1ea8aa!important;
+  border-radius:15px!important;
+}
+
+.pricing_table.orange_table .button_booking a{
+  background-color:#f58927!important;
+  border-radius:15px!important;
+}
+.pricing_table.blue_table .button_booking a{
+  background-color:#2f439b!important;
+  border-radius:15px!important;
+}
+.pricing_table.yellow_table .button_booking a{
+  background-color:#fccf04!important;
+  border-radius:15px!important;
+}
+.pricing_table.green_table .button_booking a{
+  background-color:#8dc63f!important;
+  border-radius:15px!important;
+}
+
+/* Hover style */
+.pricing_table.red_table:hover .button_booking a{
+  background-color:#fff!important;
+  color:#eb1c50!important
+}
+
+.pricing_table.till_table:hover .button_booking a{
+  background-color:#fff!important;
+  color:#1ea8aa!important
+}
+
+.pricing_table.orange_table:hover .button_booking a{
+  background-color:#fff!important;
+  color:#f58927!important
+}
+.pricing_table.blue_table:hover .button_booking a{
+  background-color:#fff!important;
+  color:#2f439b!important
+}
+
+.pricing_table.yellow_table:hover .button_booking a{
+  background-color:#fff!important;
+  color:#fccf04!important
+}
+
+.pricing_table.purple_table:hover .button_booking a{
+  background-color:#fff!important;
+  color:#32004a!important
+}
+.pricing_table.green_table:hover .button_booking a{
+  background-color:#fff!important;
+  color:#8dc63f!important
+}
+/* End Prcing Tables button for booking */
