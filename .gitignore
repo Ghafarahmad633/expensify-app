@@ -1,2 +1,7 @@
 node_modules/
-.idea/
+/.idea
+/.pub
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
