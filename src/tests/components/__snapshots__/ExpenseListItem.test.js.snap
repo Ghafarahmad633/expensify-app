@@ -13,8 +13,9 @@ exports[`Should setup expense list item 1`] = `
   <p>
     Created At 
     0
-     - $
-    1000
+  </p>
+  <p>
+    January1
   </p>
   <strong>
     This is home rent
