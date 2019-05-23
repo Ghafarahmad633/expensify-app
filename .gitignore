@@ -1,6 +1,5 @@
 node_modules/
 .idea/
-.pub
 public/bundle.js
 public/bundle.js.map
 public/styles.css
