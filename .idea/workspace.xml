@@ -1,67 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae3f3962-4e2f-4cdd-8623-953692068d52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Routes/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Routes/PublicRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/LoadingPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_box-layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_content-container.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_expense-filters.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_inputs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_list_item.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_loader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_page-header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/component/_visiblity.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/actions/auth.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/components/LoginPage.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/reducers/auth.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/expenses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ExpensAdddPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ExpensAdddPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ExpensEditPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ExpensEditPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ExpensHelpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ExpensHelpPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ExpenseForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ExpenseForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ExpenseList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ExpenseList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ExpenseListFilters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ExpenseListFilters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/ExpenseListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ExpenseListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/TotalExpense.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TotalExpense.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/firebase/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/expenses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/base/_setting.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/base/_setting.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/actions/expenses.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/actions/expenses.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/ExpensEditPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/ExpensEditPage.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/ExpenseListFilters.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/ExpenseListFilters.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/Header.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/Header.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpeneList.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpeneList.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpensEditPage.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpensEditPage.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseAddPage.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseAddPage.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseForm.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseForm.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseList.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseList.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseListFilters.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseListFilters.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseListItem.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/ExpenseListItem.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/Header.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/Header.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/components/__snapshots__/TotalExpense.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/components/__snapshots__/TotalExpense.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/reducers/expenses.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/reducers/expenses.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="ae3f3962-4e2f-4cdd-8623-953692068d52" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -227,8 +167,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tests/actions/expenses.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="36" column="49" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="49" />
+            <state relative-caret-position="340">
+              <caret line="38" column="37" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="37" />
               <folding>
                 <element signature="e#0#232#0" expanded="true" />
               </folding>
@@ -502,16 +442,15 @@
       <workItem from="1559140767882" duration="26524000" />
       <workItem from="1559452028206" duration="10093000" />
       <workItem from="1559601584697" duration="6213000" />
-      <workItem from="1559636450815" duration="782000" />
+      <workItem from="1559636450815" duration="1828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350094000" />
+    <option name="totallyTimeSpent" value="351140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16385669" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -936,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/actions/expenses.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="36" column="49" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="49" />
+        <state relative-caret-position="340">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="37" />
           <folding>
             <element signature="e#0#232#0" expanded="true" />
           </folding>
