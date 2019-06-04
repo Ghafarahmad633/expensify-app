@@ -1,0 +1,21 @@
+.list-header{
+  background: $off-white;
+  border: 1px solid darken($off-white,7%);
+  color: $gray_text;
+  display: flex;
+  justify-content: space-between;
+  padding: $s-size $m-size;
+  margin-bottom: $l-size;
+}
+.list-header__message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $m-size;
+  border: 1px solid darken($off-white,7%);
+  color: $gray_text;
+
+}
+.list-item__body{
+  margin-bottom: $m-size;
+}

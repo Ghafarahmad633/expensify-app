@@ -27,7 +27,9 @@ export default  (state=expendDefaultState,action)=>{
         case "REMOVE_EXPENSES_SELECTED_RANGE":
             return state.filter((exp)=>{
                 return !action.ids.includes(exp.id)
-            })
+            });
+        case 'SET_EXPENSES':
+            return action.expenses
         default:
             return state
     }

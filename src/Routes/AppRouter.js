@@ -1,25 +1,34 @@
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {Router, Route, Switch} from "react-router-dom";
 import React from "react";
+import {connect} from 'react-redux'
 import ExpensifyDashboardPage from '../component/Dashboard'
 import ExpensAdddPage from '../component/ExpensAdddPage'
 import ExpensEditPage from '../component/ExpensEditPage'
 import ExpensHelpPage from '../component/ExpensHelpPage'
 import NotFoundPage from '../component/NotFoundPage'
-import Header from '../component/Header'
-
-const AppRouter=()=>(
-    <BrowserRouter>
+import LoginPage from '../component/LoginPage'
+import {createBrowserHistory} from 'history'
+import PrivateRoute from './PrivateRoute'
+import PublicRoute from './PublicRoute'
+import {Header} from "../component/Header";
+export const history=createBrowserHistory()
+export const AppRouter=({isUserLogin})=>(
+    <Router history={history}>
         <div>
-            <Header/>
             <Switch>
-                <Route  path='/' component={ExpensifyDashboardPage} exact={true} />
-                <Route  path='/create' component={ExpensAdddPage}/>
-                <Route  path="/edit/:id" component={ExpensEditPage}/>
-                <Route  path='/help' component={ExpensHelpPage}/>
+                <PublicRoute  path='/' component={LoginPage} exact={true} />
+                <PrivateRoute  path='/dashboard' component={ExpensifyDashboardPage} />
+                <PrivateRoute  path='/create' component={ExpensAdddPage}/>
+                <PrivateRoute  path="/edit/:id" component={ExpensEditPage}/>
                 <Route  component={NotFoundPage}/>
             </Switch>
         </div>
-    </BrowserRouter>
+    </Router>
 )
-export default AppRouter
+const mapStateToProps=(state)=>{
+    return{
+        isUserLogin:!!state.auth.uid
+    }
+}
+export default connect(mapStateToProps)(AppRouter)
 

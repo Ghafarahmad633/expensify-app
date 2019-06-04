@@ -3,8 +3,8 @@ import {connect} from 'react-redux'
 import {setFiltertext} from "../actions/filters";
 import {sortyByDate,sortyByAmount} from '../actions/filters'
 import {setStartDate,setEndDate} from '../actions/filters'
-import {removeExpenseSelctedRange} from '../actions/expenses'
-import {refereshStateAfterDelete,setTrueSelectAll,setFalseSelectAll} from '../actions/deleteSelected'
+import {removeExpenseSelctedRange,startRemoveExpenseSelctedRange} from '../actions/expenses'
+import {refereshStateAfterDelete} from '../actions/deleteSelected'
 import {DateRangePicker} from 'react-dates'
 export class ExpenseListFilters extends React.Component {
     constructor(props){
@@ -23,19 +23,10 @@ export class ExpenseListFilters extends React.Component {
         this.setState(()=>({calendarFocused}))
     };
     deletedAllSelected=()=>{
-        this.props.removeExpenseSelctedRange({ids:this.props.selectedToDeleted})
+        this.props.startRemoveExpenseSelctedRange({ids:this.props.selectedToDeleted})
         this.props.refereshStateAfterDelete()
 
-    }
-    selectAll=(e)=>{
 
-        if(e.target.checked){
-            this.props.dispatch(setTrueSelectAll())
-        }
-        if(!e.target.checked){
-            this.props.dispatch(setFalseSelectAll())
-        }
-        console.log(this.props.selectAllExpense)
     }
 
     onTextChange=(e)=>{
@@ -54,38 +45,50 @@ export class ExpenseListFilters extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className='content-continer'>
+                <div className='input-group'>
+                    <div className='input-group__item'>
+                        <input type='text'
+                               placeholder='search expenses'
+                               className='text-input'
+                               disabled={this.props.expenses.length<=0}
+                               value={this.props.filters.text} onChange={this.onTextChange}
+                        />
+                    </div>
+                    <div className='input-group__item'>
+                        <input type='button' value='Delected Selected' className='button button__form'
+                               disabled={this.props.selectedToDeleted.length<=0}
+                               onClick={this.deletedAllSelected}
+                        />
+                    </div>
+                    <div className='input-group__item'>
+                        <select className='select'
+                            disabled={this.props.expenses.length<=0}
+                            value={this.props.filters.sortyBy}
+                            onChange={this.onSortChange}>
+                            <option  value='date'>Date</option>
+                            <option value='amount'>Amount</option>
+                        </select>
+                    </div>
+                    <div className='input-group__item'>
+                        <DateRangePicker
+                            startDate={this.props.filters.startDate}
+                            endDate={this.props.filters.endDate}
+                            onDatesChange={this.onDatesChange}
+                            focusedInput={this.state.calendarFocused}
+                            onFocusChange={this.onFocusChange}
+                            numberOfMonths={1}
+                            isOutsideRange={()=>false}
+                            showClearDates={true}
+                            disabled={this.props.expenses.length<=0}
+                        />
+                    </div>
+                </div>
 
-                <input type='text'
-                       disabled={this.props.expenses.length<=0}
-                       placeholder='Enter Value To Search'
-                       value={this.props.filters.text} onChange={this.onTextChange}/>
-                <input type='button' value='Delected Selected'
-                       disabled={this.props.selectedToDeleted.length<=0}
-                       onClick={this.deletedAllSelected}
-                />
-                <select
-                    disabled={this.props.expenses.length<=0}
-                    value={this.props.filters.sortyBy}
-                    onChange={this.onSortChange}>
-                    <option  value='date'>Date</option>
-                    <option value='amount'>Amount</option>
-                </select>
-                <DateRangePicker
-                    startDate={this.props.filters.startDate}
-                    endDate={this.props.filters.endDate}
-                    onDatesChange={this.onDatesChange}
-                    focusedInput={this.state.calendarFocused}
-                    onFocusChange={this.onFocusChange}
-                    numberOfMonths={1}
-                    isOutsideRange={()=>false}
-                    showClearDates={true}
-                    disabled={this.props.expenses.length<=0}
-                />
-                Select All <input
-                type='checkbox'
-                onClick={this.selectAll}
-                value='selectAll'/>
+
+
+
+
 
 
             </div>
@@ -109,8 +112,8 @@ const mapDispatchToProps=(dispatch,props)=>{
         setFiltertext:(text)=>dispatch(setFiltertext(text)),
         setStartDate:(date)=>dispatch(setStartDate(date)),
         setEndDate:(date)=>dispatch(setEndDate(date)),
-        removeExpenseSelctedRange:(data)=>dispatch(removeExpenseSelctedRange(data)),
-        refereshStateAfterDelete:()=>refereshStateAfterDelete()
+        startRemoveExpenseSelctedRange:(data)=>dispatch(startRemoveExpenseSelctedRange(data)),
+        refereshStateAfterDelete:()=>dispatch(refereshStateAfterDelete())
 
     }
 

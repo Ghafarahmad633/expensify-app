@@ -1,50 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseList with expenses 1`] = `
-<div>
-  <h1>
-    Expense List
-  </h1>
-  <Connect(ExpenseListItem)
-    amount={1000}
-    createdAt={0}
-    desc="Rent"
-    id="1"
-    key="1"
-    note="This is home rent"
-    onSelectChange={[Function]}
-    selectAll={null}
-  />
-  <Connect(ExpenseListItem)
-    amount={1800}
-    createdAt={-345600000}
-    desc="Gum"
-    id="2"
-    key="2"
-    note="This is Gum expense"
-    onSelectChange={[Function]}
-    selectAll={null}
-  />
-  <Connect(ExpenseListItem)
-    amount={3000}
-    createdAt={345600000}
-    desc="Fee"
-    id="3"
-    key="3"
-    note="This is School Fee"
-    onSelectChange={[Function]}
-    selectAll={null}
-  />
+<div
+  className="content-continer"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-item__body"
+  >
+    <Connect(ExpenseListItem)
+      amount={1000}
+      createdAt={0}
+      desc="Rent"
+      id="1"
+      key="1"
+      note="This is home rent"
+      onSelectChange={[Function]}
+      selectAll={null}
+    />
+    <Connect(ExpenseListItem)
+      amount={1800}
+      createdAt={-345600000}
+      desc="Gum"
+      id="2"
+      key="2"
+      note="This is Gum expense"
+      onSelectChange={[Function]}
+      selectAll={null}
+    />
+    <Connect(ExpenseListItem)
+      amount={3000}
+      createdAt={345600000}
+      desc="Fee"
+      id="3"
+      key="3"
+      note="This is School Fee"
+      onSelectChange={[Function]}
+      selectAll={null}
+    />
+  </div>
 </div>
 `;
 
 exports[`should render ExpenseList with no expenses 1`] = `
-<div>
-  <h1>
-    Expense List
-  </h1>
-  <p>
-    No Expenses List Found
-  </p>
+<div
+  className="content-continer"
+>
+  <div
+    className="list-header"
+  >
+    <div
+      className="show-for-mobile"
+    >
+      Expenses
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Expense
+    </div>
+    <div
+      className="show-for-desktop"
+    >
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-item__body"
+  >
+    <div
+      className="list-header__message"
+    >
+      No Expenses Found
+    </div>
+  </div>
 </div>
 `;

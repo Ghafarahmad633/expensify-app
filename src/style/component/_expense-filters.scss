@@ -1,0 +1,46 @@
+.input-group{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $l-size;
+  flex-direction: column;
+
+  @media (min-width:$desktop-breakppint) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+}
+.input-group__item{
+
+  margin-bottom: $s-size;
+  @media (min-width:$desktop-breakppint) {
+    margin-bottom: 0;
+    margin-right: $s-size;
+    width: calc(33% - 1.2rem);
+
+  }
+  input,select{
+    width: 100%;
+  }
+}
+.input-group__item:last-child{
+
+  width: 100%;
+  margin-top: $s-size;
+  .CalendarDay--selected-start, .CalendarDay--selected-end, .CalendarDay--selected,
+  .CalendarDay--selected-span{
+    background: $blue!important;
+    border-color: $blue!important;
+  }
+  .DayPickerKeyboardShortcuts__show--bottom-right{
+    border-right-color: $blue!important;
+  }
+  .DateInput__display-text--focused{
+    background: fade_out($blue,.3);
+    border-color:fade_out($blue,.3);
+    color: #ffffff;
+  }
+}

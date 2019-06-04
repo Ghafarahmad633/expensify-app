@@ -1,0 +1,22 @@
+.button{
+  background: $blue;
+  color: #fff;
+  border: none;
+  font-weight: 300;
+  font-size: $font-size-larger;
+  padding: $s-size $m-size;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+}
+.button__link{
+  background: transparent;
+}
+.button__form{
+  height: 50px;
+}
+
+.button__remove{
+  background: $gray;
+  margin-top: $m-size;
+}

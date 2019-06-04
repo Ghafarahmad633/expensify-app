@@ -24,22 +24,28 @@ export class ExpenseList extends React.Component{
     };
     render(){
         return(
-            <div>
-                <h1>Expense List</h1>
-                {
-                    this.props.expenses.length===0?(
-                        <p>No Expenses List Found</p>
-                    ):(
-                        this.props.expenses.map((expenses)=>(
-                            <ExpenseListItem
-                                key={expenses.id}
-                                {...expenses}
-                                onSelectChange={this.onSelectChange}
-                                selectAll={this.state.selectAll}
-                            />
-                        ))
-                    )
-                }
+            <div className='content-continer'>
+                <div className='list-header'>
+                    <div className='show-for-mobile'>Expenses</div>
+                    <div className='show-for-desktop'>Expense</div>
+                    <div className='show-for-desktop'>Amount</div>
+                </div>
+               <div className='list-item__body'>
+                   {
+                       this.props.expenses.length===0?(
+                           <div className='list-header__message'>No Expenses Found</div>
+                       ):(
+                           this.props.expenses.map((expenses)=>(
+                               <ExpenseListItem
+                                   key={expenses.id}
+                                   {...expenses}
+                                   onSelectChange={this.onSelectChange}
+                                   selectAll={this.state.selectAll}
+                               />
+                           ))
+                       )
+                   }
+               </div>
 
             </div>
         )

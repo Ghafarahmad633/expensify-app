@@ -4,7 +4,7 @@ import {ExpenseListFilters} from '../../component/ExpenseListFilters'
 import {filters,altFilters} from "../fixtures/filters";
 import expenses from '../fixtures/expenses'
 import moment from "moment";
-let sortyByDate,sortyByAmount,setFiltertext,setStartDate,setEndDate,wraper,removeExpenseSelctedRange,refereshStateAfterDelete
+let sortyByDate,sortyByAmount,setFiltertext,setStartDate,setEndDate,wraper,removeExpenseSelctedRange,refereshStateAfterDelete,startRemoveExpenseSelctedRange
 
 beforeEach(()=>{
     sortyByDate=jest.fn();
@@ -13,7 +13,8 @@ beforeEach(()=>{
     setStartDate=jest.fn();
     setEndDate=jest.fn();
     removeExpenseSelctedRange=jest.fn();
-    refereshStateAfterDelete=jest.fn()
+    refereshStateAfterDelete=jest.fn();
+    startRemoveExpenseSelctedRange=jest.fn()
 
     wraper=shallow(<ExpenseListFilters
         filters={filters}
@@ -26,6 +27,7 @@ beforeEach(()=>{
         setEndDate={setEndDate}
         removeExpenseSelctedRange={removeExpenseSelctedRange}
         refereshStateAfterDelete={refereshStateAfterDelete}
+        startRemoveExpenseSelctedRange={startRemoveExpenseSelctedRange}
     />)
 
 })
@@ -85,5 +87,5 @@ test('should handle onFocusChange in datepciker ',()=>{
 })
 test('should handle Delected Selected Filter ',()=>{
     wraper.find('input').at(1).simulate('click')
-    expect(removeExpenseSelctedRange).toHaveBeenCalled(  )
+    expect(startRemoveExpenseSelctedRange).toHaveBeenCalled()
 })

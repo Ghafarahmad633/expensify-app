@@ -70,3 +70,15 @@ test("Should setup REMOVE_EXPENSES_SELECTED_RANGE",()=>{
     const state=expenseReducer(expenses,action)
     expect(state).toEqual([expenses[1]])
 })
+
+
+
+test('should set up SET UP EXPENSE action',()=>{
+    const action={
+        type:"SET_EXPENSES",
+        expenses:[expenses[0]]
+    }
+    const state=expenseReducer(expenses,action)
+    expect(state).toEqual([expenses[0]])
+
+})
